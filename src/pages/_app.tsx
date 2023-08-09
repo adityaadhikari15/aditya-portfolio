@@ -1,4 +1,3 @@
-import "@styles/globals.scss";
 import type { AppProps } from "next/app";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -10,10 +9,16 @@ import "@styles/prime-react-custom.scss";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
+import "@styles/global.scss";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="h-100">
-      <Component {...pageProps} />
+      <main>
+        <div className="">
+          <Component {...pageProps} />
+        </div>
+      </main>
     </div>
   );
 }
