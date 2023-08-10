@@ -1,0 +1,63 @@
+.my_previous_jobs {
+  min-height: 450px;
+  .job_tab {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    .tab_list {
+      overflow: auto;
+      ul {
+        display: flex;
+        flex-direction: row;
+        width: max-content;
+        li {
+          font-size: 14px;
+          padding: 8px 16px;
+          cursor: pointer;
+          border-bottom: 2px solid var(--lightest-navy);
+          border-left: 0;
+          &:hover {
+            color: var(--primary-color);
+            background: #ffffff1a;
+          }
+          &.tab_selected {
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+    .tab_content {
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .job_tab {
+      flex-direction: row;
+      .tab_list {
+        overflow: inherit;
+        ul {
+          display: inline;
+          flex-direction: column;
+          li {
+            font-size: 14px;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-left: 2px solid var(--lightest-navy);
+            border-bottom: 0px solid var(--lightest-navy);
+            &:hover {
+              color: var(--primary-color);
+              background: #ffffff1a;
+            }
+            &.tab_selected {
+              border-left: 2px solid var(--primary-color);
+              border-bottom: 0px solid var(--lightest-navy);
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+      .tab_content {
+      }
+    }
+  }
+}
