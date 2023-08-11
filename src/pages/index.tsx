@@ -2,6 +2,15 @@ import { MyProjects } from "@/components/my-projects/my-projects";
 import MainStyles from "./main.module.scss";
 import { MyPreviousWorks } from "@/components/my-previous-jobs/my-previous-jobs";
 export default function Home() {
+  const scrollToDiv = function (element_id: string) {
+    const element = document.getElementById(element_id);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
   const mailTo = () => {
     window.location.href = "mailto:adityaadhikari15@gmail.com";
   };
@@ -14,22 +23,31 @@ export default function Home() {
               <div className="fw-bolder mb-24px text-primary font-mono">
                 Hi, my name is
               </div>
-              <h1 className="big-heading">Aditya Adhikari.</h1>
+              <h1 className="big-heading">👨‍💻 Aditya Adhikari.</h1>
               <div>
                 {" "}
                 <h3 className="big-heading">I build things for the web.</h3>
               </div>
               <p>
-                I’m a software engineer specializing in building (and
-                occasionally designing) exceptional digital experiences.
-                Currently, I’m focused on building accessible, human-centered
-                products at Upstatement.
+                If you have a project that you need to take to the next level or
+                develop a new one from scratch using cutting-edge technologies
+                but still well architecture (modular, easy to extend, and
+                reuse), you are in the right place.{" "}
+                <span className="text-primary">Angular is my passion</span> and
+                I love to develop well-structured, extensible, and performant
+                angular applications.
               </p>
               <div className="mt-32px">
-                <button className="button--primary mr-24px">
+                <button
+                  className="button--primary mr-24px"
+                  onClick={() => scrollToDiv("my_projects")}
+                >
                   View my work
                 </button>
-                <button className="button--primary" onClick={mailTo}>
+                <button
+                  className="button--primary"
+                  onClick={() => scrollToDiv("hire_me")}
+                >
                   Hire me
                 </button>
               </div>
@@ -43,22 +61,33 @@ export default function Home() {
           <div className="row">
             <div className="col-md-8">
               <p>
-                Hello! My name is Brittany and I enjoy creating things that live
-                on the internet. My interest in web development started back in
-                2012 when I decided to try editing custom Tumblr themes — turns
-                out hacking together a custom reblog button taught me a lot
-                about HTML & CSS! Fast-forward to today, and
+                👋 Hello! My name is Aditya. I am an accomplished front-end
+                developer with{" "}
+                <span className="text-primary">
+                  6+ years of professional experience
+                </span>{" "}
+                in the field. My expertise lies in crafting visually appealing
+                and user-friendly interfaces, utilizing the latest technologies
+                and best practices to deliver exceptional web experiences.
+                Fast-forward to today, I&apos;ve crafted software for an{" "}
+                <span className="text-primary"> advertising agency</span>,{" "}
+                <span className="text-primary">two startups</span> , and{" "}
+                <span className="text-primary">
+                  I&apos;m presently freelancing
+                </span>{" "}
+                .
               </p>
               <p>
-                I&apos;ve had the privilege of working at an advertising agency,
-                a start-up, a huge corporation, and a student-led design studio.
-                My main focus these days is building accessible, inclusive
-                products and digital experiences at Upstatement for a variety of
-                clients.
+                When I am not immersed in coding or experimenting with the
+                latest frameworks, I find solace and exhilaration in the great
+                outdoors, particularly during mountain expeditions.
               </p>
               <p>
-                I also recently launched a course that covers everything you
-                need to build a web app with the Spotify API using Node & React.
+                With my unique blend of technical proficiency, a passion for
+                technology, and a love for adventure, I approach both my
+                professional and personal pursuits with dedication and
+                enthusiasm, always eager to embrace new challenges and reach new
+                heights.
               </p>
             </div>
             <div className="col-md-4 center">
@@ -138,11 +167,11 @@ export default function Home() {
         <section>
           <MyPreviousWorks />
         </section>
-        <section>
+        <section id="my_projects">
           <MyProjects />
         </section>
         <hr />
-        <section>
+        <section id="hire_me">
           <h2 className="text-white fw-bold">
             In need of a frontend developer?
           </h2>

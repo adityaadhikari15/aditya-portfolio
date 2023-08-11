@@ -86,8 +86,8 @@ export default function App({ Component, pageProps }: AppProps) {
                 </li>
                 <li>
                   <a
-                    href="https://www.upwork.com/freelancers/adityaadhikari"
-                    aria-label="Codepen"
+                    href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
+                    aria-label="Upwork"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

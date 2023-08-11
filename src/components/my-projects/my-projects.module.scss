@@ -1,63 +1,110 @@
-.my_previous_jobs {
-  min-height: 450px;
-  .job_tab {
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-    .tab_list {
-      overflow: auto;
+.my_projects {
+  .projects_list {
+    ul {
+      li {
+        margin-bottom: 24px;
+        padding: 16px;
+        border-radius: 6px;
+        &.project {
+          display: flex;
+          gap: 32px;
+          h3 {
+            font-size: 18px;
+            color: white;
+          }
+          h6 {
+            font-size: 12px;
+            color: var(--slate);
+          }
+          p {
+            font-size: 13px;
+            margin-top: 12px;
+            color: #ffffffbf;
+          }
+          img {
+            max-width: 300px;
+            max-height: 120px;
+          }
+          .image_display_sm {
+            display: none;
+          }
+          .image_display_md {
+            display: block;
+            width: 250px;
+            border-color: rgba(226, 232, 240, 0.1);
+            // max-height: 170px;
+          }
+        }
+        &:nth-child(odd) {
+          &.project {
+            img {
+              // order: 1;
+            }
+          }
+        }
+        .techs {
+          margin-top: 16px;
+          .tech {
+            --tw-text-opacity: 1;
+            background-color: rgba(45, 212, 191, 0.1);
+            border-radius: 50px;
+            color: rgb(94 234 212 / var(--tw-text-opacity));
+            padding: 4px 10px;
+            font-size: 11px;
+            margin-right: 8px;
+          }
+        }
+        &:hover {
+          // background-color: rgba(30, 41, 59, 0.5);
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .projects_list {
       ul {
-        display: flex;
-        flex-direction: row;
-        width: max-content;
         li {
-          font-size: 14px;
-          padding: 8px 16px;
-          cursor: pointer;
-          border-bottom: 2px solid var(--lightest-navy);
-          border-left: 0;
-          &:hover {
-            color: var(--primary-color);
-            background: #ffffff1a;
-          }
-          &.tab_selected {
-            border-bottom: 2px solid var(--primary-color);
-            color: var(--primary-color);
-          }
-        }
-      }
-    }
-    .tab_content {
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .job_tab {
-      flex-direction: row;
-      .tab_list {
-        overflow: inherit;
-        ul {
-          display: inline;
-          flex-direction: column;
-          li {
-            font-size: 14px;
-            padding: 8px 16px;
-            cursor: pointer;
-            border-left: 2px solid var(--lightest-navy);
-            border-bottom: 0px solid var(--lightest-navy);
-            &:hover {
-              color: var(--primary-color);
-              background: #ffffff1a;
+          &.project {
+            .image_display_sm {
+              display: block;
+              margin: 32px 0;
             }
-            &.tab_selected {
-              border-left: 2px solid var(--primary-color);
-              border-bottom: 0px solid var(--lightest-navy);
-              color: var(--primary-color);
+            .image_display_md {
+              display: none;
             }
           }
         }
       }
-      .tab_content {
-      }
     }
   }
+  // @media screen and (min-width: 992px) {
+  //   .job_tab {
+  //     flex-direction: row;
+  //     .tab_list {
+  //       overflow: inherit;
+  //       ul {
+  //         display: inline;
+  //         flex-direction: column;
+  //         li {
+  //           font-size: 14px;
+  //           padding: 8px 16px;
+  //           cursor: pointer;
+  //           border-left: 2px solid var(--lightest-navy);
+  //           border-bottom: 0px solid var(--lightest-navy);
+  //           &:hover {
+  //             color: var(--primary-color);
+  //             background: #ffffff1a;
+  //           }
+  //           &.tab_selected {
+  //             border-left: 2px solid var(--primary-color);
+  //             border-bottom: 0px solid var(--lightest-navy);
+  //             color: var(--primary-color);
+  //           }
+  //         }
+  //       }
+  //     }
+  //     .tab_content {
+  //     }
+  //   }
+  // }
 }

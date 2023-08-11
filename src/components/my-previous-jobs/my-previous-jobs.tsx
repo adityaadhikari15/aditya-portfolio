@@ -20,13 +20,15 @@ export const MyPreviousWorks = () => {
                 className={tabIndex === 0 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(0)}
               >
-                SmartDocs&nbsp;(Freelancer)
+                SmartDocs&nbsp;
+                <img src="/assets/images/upwork.svg" width={15} />
               </li>
               <li
                 className={tabIndex === 1 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(1)}
               >
-                Bid Betty&nbsp;(Freelancer)
+                Bid Betty&nbsp;
+                <img src="/assets/images/upwork.svg" width={15} />
               </li>
               <li
                 className={tabIndex === 2 ? ComponentStyles.tab_selected : ""}
@@ -46,40 +48,37 @@ export const MyPreviousWorks = () => {
             {tabIndex === 0 && (
               <div>
                 <h5>
-                  <span>Senior Frontend Developer</span>
+                  <span>Senior Angular Developer</span>
                   <span className="company">
                     &nbsp;@&nbsp;
                     <a
-                      href="https://www.apple.com/music/"
+                      href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
                       className="inline-link"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      SmartDocs
+                      Upwork
                     </a>
                   </span>
                 </h5>
-                <p className="range">July - December 2017</p>
-                <div>
+                <p className={ComponentStyles.range}>
+                  November 2022 - July 2023
+                </p>
+                <div className={ComponentStyles.tab_content_job_desc}>
                   <ul>
                     <li>
-                      Developed and styled interactive web applications for
-                      Apple Music using Ember and SCSS
+                      Created dynamic web applications for SmartDocs Auto-pilot
+                      Bot, utilizing Angular 15 and SCSS for development and
+                      styling.
                     </li>
                     <li>
-                      Built and shipped the Apple Music Extension for Facebook
-                      Messenger leveraging third-party and internal API
-                      integrations
+                      Provide leadership within engineering department through
+                      close collaboration, knowledge shares, and mentorship
                     </li>
                     <li>
-                      Architected and implemented the user interface of Apple
-                      Music's embeddable web player widget for in-browser user
-                      authorization and full song playback
-                    </li>
-                    <li>
-                      Contributed extensively to the creation of MusicKit JS, a
-                      public-facing JavaScript SDK for embedding Apple Music
-                      players into web applications
+                      Designed and developed the Admin Panel&apos;s user
+                      interface and dashboard to monitor and manage bots
+                      utilized for invoice downloads across various channels.
                     </li>
                   </ul>
                 </div>
@@ -89,42 +88,36 @@ export const MyPreviousWorks = () => {
               <div className="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
                 <div>
                   <h5>
-                    <span>Lead Engineer</span>
+                    <span>Senior Frontend Developer</span>
                     <span className="company">
                       &nbsp;@&nbsp;
                       <a
-                        href="https://www.upstatement.com/"
+                        href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
                         className="inline-link"
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        Upstatement
+                        Upwork
                       </a>
                     </span>
                   </h5>
-                  <p className="range">May 2018 - Present</p>
-                  <div>
+                  <p className={ComponentStyles.range}>
+                    October 2022 - June 2023
+                  </p>
+                  <div className={ComponentStyles.tab_content_job_desc}>
                     <ul>
                       <li>
-                        Deliver high-quality, robust production code for a
-                        diverse array of projects for clients including Harvard
-                        Business School, Everytown for Gun Safety, Pratt
-                        Institute, Koala Health, Vanderbilt University, The 19th
-                        News, and more
+                        Autonomously restructuring legacy code into an organized
+                        structure using interceptors, authentication guards, and
+                        router guards for role-based enhancement.
                       </li>
                       <li>
-                        Work alongside creative directors to lead the research,
-                        development, and architecture of technical solutions to
-                        fulfill business requirements
+                        Applied Angular best practices to implement features and
+                        suggested solutions for enhanced user experiences.
                       </li>
                       <li>
-                        Collaborate with designers, project managers, and other
-                        engineers to transform creative concepts into production
-                        realities for clients and stakeholders
-                      </li>
-                      <li>
-                        Provide leadership within engineering department through
-                        close collaboration, knowledge shares, and mentorship
+                        Revamped auction UI and readied the project for
+                        production deployment.
                       </li>
                     </ul>
                   </div>
@@ -134,8 +127,8 @@ export const MyPreviousWorks = () => {
             {tabIndex === 2 && (
               <div>
                 <h5>
-                  <span>Software Engineer Co-op</span>
-                  <span className="company">
+                  <span>Frontend Engineer</span>
+                  {/* <span className="company">
                     &nbsp;@&nbsp;
                     <a
                       href="https://starry.com/"
@@ -145,26 +138,31 @@ export const MyPreviousWorks = () => {
                     >
                       Starry
                     </a>
-                  </span>
+                  </span> */}
                 </h5>
-                <p className="range">July - December 2016</p>
-                <div>
+                <p className={ComponentStyles.range}>
+                  June 2019 - October 2022
+                </p>
+                <div className={ComponentStyles.tab_content_job_desc}>
                   <ul>
                     <li>
-                      Engineered and improved major features of Starry's
-                      customer-facing Android web app using ES6, Handlebars,
-                      Backbone, Marionette, and CSS
+                      Architected and executed a scalable frontend for Teebeds
+                      Property Management system, employing Angular 10, Material
+                      UI, SCSS, and Angular SSR.
                     </li>
                     <li>
-                      Proposed and implemented scalable solutions to issues
-                      identified with cloud services and applications
-                      responsible for communicating with the Starry Station
-                      internet router
+                      Developed a bespoke Google-style calendar, streamlining
+                      guest check-in and checkout. Achieved a 70% speed boost
+                      over the old system, heightening user satisfaction.
                     </li>
                     <li>
-                      Collaborated with designers and other developers to ensure
-                      thoughtful and consistent user experiences across Starry’s
-                      iOS and Android mobile apps
+                      Crafted Hotel Booking Engine with integrated payments,
+                      ensuring seamless user bookings. Implemented using
+                      Next.js, SCSS, and React.
+                    </li>
+                    <li>
+                      Championed frontend development in Angular, proposing and
+                      implementing features to elevate user experience.
                     </li>
                   </ul>
                 </div>
@@ -173,8 +171,8 @@ export const MyPreviousWorks = () => {
             {tabIndex === 3 && (
               <div>
                 <h5>
-                  <span>Developer</span>
-                  <span className="company">
+                  <span>Junior Angular Developer</span>
+                  {/* <span className="company">
                     &nbsp;@&nbsp;
                     <a
                       href="https://web.northeastern.edu/scout/"
@@ -184,19 +182,25 @@ export const MyPreviousWorks = () => {
                     >
                       Scout Studio
                     </a>
-                  </span>
+                  </span> */}
                 </h5>
-                <p className="range">Spring 2016 &amp; 2017</p>
-                <div>
+                <p className={ComponentStyles.range}>
+                  September 2017 - April 2019
+                </p>
+                <div className={ComponentStyles.tab_content_job_desc}>
                   <ul>
                     <li>
-                      Collaborated with other student designers and engineers on
-                      pro-bono projects to create new brands, design systems,
-                      and websites for organizations in the community
+                      Commenced my journey as an AngularJS developer, acquiring
+                      proficiency in technologies spanning from AngularJS to
+                      Angular 5.
                     </li>
                     <li>
-                      Built and delivered technical solutions according to
-                      stakeholder business requirements
+                      Presented with a chance to create web-based portals from
+                      the ground up.
+                    </li>
+                    <li>
+                      Individually crafted and constructed CRMs for major
+                      organizations such as Harmon-Kardon and Sukam India.
                     </li>
                   </ul>
                 </div>

@@ -28,6 +28,35 @@
       }
     }
     .tab_content {
+      h5 {
+        margin-bottom: 2px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: var(--lightest-slate);
+      }
+      .tab_content_job_desc {
+        ul {
+          li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            &::before {
+              content: "▹";
+              position: absolute;
+              left: 0px;
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+      .range {
+        margin-top: 0px;
+        margin-bottom: 24px;
+        // font-family: var(--font-mono);
+        font-size: 14px;
+      }
     }
   }
   @media screen and (min-width: 992px) {
@@ -44,6 +73,7 @@
             cursor: pointer;
             border-left: 2px solid var(--lightest-navy);
             border-bottom: 0px solid var(--lightest-navy);
+            min-width: 200px;
             &:hover {
               color: var(--primary-color);
               background: #ffffff1a;
