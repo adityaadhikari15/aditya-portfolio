@@ -10,10 +10,27 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 import "@styles/global.scss";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const metaDesc = `Experienced web developer specializing in user-centric solutions, proficient in Angular.
+  Transforming ideas into seamless, visually appealing websites. Visit my portfolio for innovative projects.`;
+  const metaTitle = `Aditya Adhikari`;
+  const metaImage = `/assets/images/logo.svg`;
   return (
     <div className="h-100">
+      <Head>
+        <title>Aditya Adhikari</title>
+        <link
+          rel="shortcut icon"
+          href={"/assets/images/logo.svg"}
+          type="image/x-icon"
+        ></link>
+        <meta name="description" content={metaDesc} key="desc" />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDesc} />
+        <meta property="og:image" content={metaImage} />
+      </Head>
       <header>
         <nav>
           <div>
