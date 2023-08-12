@@ -1,6 +1,15 @@
 .landing_page {
-  // padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+  // padding-bottom: 6rem;
+  .hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
   .intro_img {
     max-height: 500px;
   }

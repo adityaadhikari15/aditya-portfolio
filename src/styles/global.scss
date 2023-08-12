@@ -63,7 +63,7 @@ body {
 main {
   max-width: 1110px;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 72px;
   .fillHeight {
     padding: 0px 150px;
   }
@@ -92,16 +92,16 @@ section {
 
 $tb-border-radius: 8px !default;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --tee-base-color: #1a181e;
-  -webkit-font-smoothing: antialiased;
-  --bs-primary: #136be6 !important;
-  --bs-blue: #136be6 !important;
-  --tee-red-color: #e50b20;
-}
+// :root {
+//   --foreground-rgb: 0, 0, 0;
+//   --background-start-rgb: 214, 219, 220;
+//   --background-end-rgb: 255, 255, 255;
+//   --tee-base-color: #1a181e;
+//   -webkit-font-smoothing: antialiased;
+//   --bs-primary: #136be6 !important;
+//   --bs-blue: #136be6 !important;
+//   --tee-red-color: #e50b20;
+// }
 
 .container {
   max-width: 1170px !important;
@@ -666,7 +666,13 @@ abbr {
   line-height: 1;
   text-decoration: none;
   transition: var(--transition);
-  margin-top: 50px;
+  margin-top: 24px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   &:hover {
     outline: none;
     box-shadow: 4px 4px 0 0 var(--primary-color);
@@ -687,7 +693,7 @@ abbr {
 
 .big-heading {
   margin: 0px;
-  font-size: clamp(43px, 8vw, 72px);
+  font-size: clamp(32px, 8vw, 70px);
 }
 
 h1 {
@@ -713,7 +719,8 @@ p {
   margin: 10px 0px 40px;
   width: 100%;
   font-size: clamp(26px, 5vw, var(--fz-heading));
-  color: white !important;
+  color: var(--lightest-slate) !important;
+
   white-space: nowrap;
   & > span {
     position: relative;
@@ -849,6 +856,9 @@ p {
 // }
 
 footer {
+  section {
+    padding: 24px 0;
+  }
   .footer-social-links {
     display: none;
     @media (max-width: 768px) {
@@ -862,14 +872,16 @@ footer {
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  // height: 75px;
+
   top: 0;
   width: 100vw;
-  height: var(--nav-scroll-height);
+  // height: var(--nav-scroll-height);
   transform: translateY(0px);
   background-color: rgba(10, 25, 47, 0.85);
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
-  padding: 16px 40px;
+  padding: 16px 24px;
   nav {
     display: flex;
     -webkit-box-pack: justify;

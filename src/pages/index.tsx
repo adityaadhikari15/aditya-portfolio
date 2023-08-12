@@ -15,17 +15,16 @@ export default function Home() {
     window.location.href = "mailto:adityaadhikari15@gmail.com";
   };
   return (
-    <div className="container">
+    <div className="">
       <div className={MainStyles.landing_page}>
-        <div className="hero_section">
+        <div className={MainStyles.hero_section}>
           <div className="row">
             <div className="col-md-12 m-auto">
-              <div className="fw-bolder mb-24px text-primary font-mono">
+              <div className="mb-24px text-primary font-mono">
                 Hi, my name is
               </div>
               <h1 className="big-heading">👨‍💻 Aditya Adhikari.</h1>
               <div>
-                {" "}
                 <h3 className="big-heading">I build things for the web.</h3>
               </div>
               <p>
@@ -180,8 +179,13 @@ export default function Home() {
             for work.
           </div>
           <div className="mt-32px">
-            <button className="button--primary mr-24px">Send me message</button>
-            <button className="button--primary">Download Resume</button>
+            <button className="button--primary mr-24px">
+              {" "}
+              <i className="pi pi-envelope mr-8px"></i>Message
+            </button>
+            <button className="button--primary">
+              <i className="pi pi-download mr-8px"></i>Resume
+            </button>
           </div>
         </section>
       </div>
