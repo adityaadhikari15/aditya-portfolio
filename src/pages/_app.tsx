@@ -16,23 +16,23 @@ export default function App({ Component, pageProps }: AppProps) {
   const metaDesc = `Experienced web developer specializing in user-centric solutions, proficient in Angular.
   Transforming ideas into seamless, visually appealing websites. Visit my portfolio for innovative projects.`;
   const metaTitle = `Aditya Adhikari`;
-  const metaImage = `/assets/images/logo.svg`;
+  const metaImage = `assets/images/logo.svg`;
   const url = `https://adityaadhikari.in/`;
   return (
     <div className="h-100">
       <Head>
         <title>Aditya Adhikari</title>
         <link rel="shortcut icon" href={metaImage} type="image/x-icon"></link>
-        <meta name="image" content="/assets/images/og.svg" />
+        <meta name="image" content="assets/images/og.svg" />
         <meta name="description" content={metaDesc} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:image" content="/assets/images/og.svg"></meta>
+        <meta property="og:image" content="assets/images/og.svg"></meta>
         <meta property="og:url" content={url}></meta>
         <meta property="og:type" content="website"></meta>
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDesc} />
-        <meta name="twitter:image" content="/assets/images/og.svg"></meta>
+        <meta name="twitter:image" content="assets/images/og.svg"></meta>
       </Head>
       <header>
         <nav>
