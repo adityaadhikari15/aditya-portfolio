@@ -63,7 +63,7 @@ body {
 main {
   max-width: 1110px;
   margin: auto;
-  padding-top: 72px;
+  // padding-top: 72px;
   .fillHeight {
     padding: 0px 150px;
   }
@@ -872,7 +872,7 @@ footer {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   // height: 75px;
   z-index: 1;
   top: 0;
