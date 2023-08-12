@@ -874,12 +874,12 @@ footer {
 header {
   position: fixed;
   // height: 75px;
-
+  z-index: 1;
   top: 0;
   width: 100vw;
   // height: var(--nav-scroll-height);
   transform: translateY(0px);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgb(10 25 47);
   box-shadow: 0 10px 30px -10px var(--navy-shadow);
   padding: 16px 24px;
   nav {
