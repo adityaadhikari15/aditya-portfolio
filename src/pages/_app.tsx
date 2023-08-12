@@ -23,16 +23,16 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Aditya Adhikari</title>
         <link rel="shortcut icon" href={metaImage} type="image/x-icon"></link>
-        <meta name="image" content="assets/images/og.svg" />
+        <meta name="image" content="assets/images/og.png" />
         <meta name="description" content={metaDesc} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:image" content="assets/images/og.svg"></meta>
+        <meta property="og:image" content="assets/images/og.png"></meta>
         <meta property="og:url" content={url}></meta>
         <meta property="og:type" content="website"></meta>
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDesc} />
-        <meta name="twitter:image" content="assets/images/og.svg"></meta>
+        <meta name="twitter:image" content="assets/images/og.png"></meta>
       </Head>
       <header>
         <nav>
