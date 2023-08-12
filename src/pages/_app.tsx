@@ -21,15 +21,14 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="h-100">
       <Head>
         <title>Aditya Adhikari</title>
-        <link
-          rel="shortcut icon"
-          href={"/assets/images/logo.svg"}
-          type="image/x-icon"
-        ></link>
+        <link rel="shortcut icon" href={metaImage} type="image/x-icon"></link>
         <meta name="description" content={metaDesc} key="desc" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDesc} />
-        <meta property="og:image" content={metaImage} />
+        <meta property="og:image" content="/assets/images/og.svg"></meta>
+        <meta property="twitter:title" content={metaTitle} />
+        <meta property="twitter:description" content={metaDesc} />
+        <meta property="twitter:image" content="/assets/images/og.svg"></meta>
       </Head>
       <header>
         <nav>
