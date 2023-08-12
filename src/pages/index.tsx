@@ -14,6 +14,14 @@ export default function Home() {
   const mailTo = () => {
     window.location.href = "mailto:adityaadhikari15@gmail.com";
   };
+
+  const openResume = () => {
+    window.open(
+      "https://adityaadhikari.in/resume.pdf",
+      "_blank",
+      "noopener, noreferrer"
+    );
+  };
   return (
     <div className="">
       <div className={MainStyles.landing_page}>
@@ -179,11 +187,10 @@ export default function Home() {
             for work.
           </div>
           <div className="mt-32px">
-            <button className="button--primary mr-24px">
-              {" "}
+            <button className="button--primary mr-24px" onClick={mailTo}>
               <i className="pi pi-envelope mr-8px"></i>Message
             </button>
-            <button className="button--primary">
+            <button className="button--primary" onClick={openResume}>
               <i className="pi pi-download mr-8px"></i>Resume
             </button>
           </div>

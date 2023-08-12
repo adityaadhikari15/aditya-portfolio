@@ -13,11 +13,24 @@ import "@styles/global.scss";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const metaDesc = `Experienced web developer specializing in user-centric solutions, proficient in Angular.
-  Transforming ideas into seamless, visually appealing websites. Visit my portfolio for innovative projects.`;
+  const metaDesc = `Aditya Adhikari is a frontend engineer, with over 6+ years of experience, 
+  who specializes in building exceptional digital experiences.`;
   const metaTitle = `Aditya Adhikari`;
   const metaImage = `assets/images/logo.svg`;
   const url = `https://adityaadhikari.in/`;
+
+  const openResume = () => {
+    window.open(
+      "https://adityaadhikari.in/resume.pdf",
+      "_blank",
+      "noopener, noreferrer"
+    );
+  };
+
+  const mailTo = () => {
+    window.location.href = "mailto:adityaadhikari15@gmail.com";
+  };
+
   return (
     <div className="h-100">
       <Head>
@@ -40,7 +53,10 @@ export default function App({ Component, pageProps }: AppProps) {
             <img src="/assets/images/main-logo.svg" width={40} />
           </div>
           <div>
-            <button className="button--primary mt-0  px-3 py-1 fs-13px">
+            <button
+              className="button--primary mt-0  px-3 py-1 fs-13px"
+              onClick={openResume}
+            >
               <i className="pi pi-download mr-8px "></i>Resume
             </button>
             {/* <button className="button--primary fs-13px mt-0  px-3 py-1">
