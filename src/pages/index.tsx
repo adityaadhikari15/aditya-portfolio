@@ -110,7 +110,7 @@ export default function Home() {
         </section>
         <section>
           <h2 className="numbered-heading">
-            <span>2.</span> Skills & Tools
+            <span>02.</span> Skills & Tools
           </h2>
           <div className={MainStyles.skills_list}>
             <ul>

@@ -11,7 +11,7 @@ export const MyPreviousWorks = () => {
     <div className={ComponentStyles.my_previous_jobs}>
       <div>
         <h2 className="numbered-heading">
-          <span>02.</span> Where I&apos;ve worked
+          <span>03.</span> Where I&apos;ve worked
         </h2>
         <div className={ComponentStyles.job_tab}>
           <div className={ComponentStyles.tab_list}>

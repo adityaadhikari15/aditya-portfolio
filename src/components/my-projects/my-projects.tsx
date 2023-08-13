@@ -11,7 +11,7 @@ export const MyProjects = () => {
     <div className={ComponentStyles.my_projects}>
       <div className={ComponentStyles.projects_list}>
         <h2 className="numbered-heading">
-          <span>03.</span> Things That I&apos;ve Build
+          <span>04.</span> Things That I&apos;ve Build
         </h2>
         <div>
           <ul>
