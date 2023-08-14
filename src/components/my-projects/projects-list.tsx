@@ -29,7 +29,7 @@ export const Projects = [
   },
   {
     company: "SmartDocs",
-    image: "assets/images/pms.png",
+    image: "assets/images/smart-docs-login.png",
     name: "Auto-pilot BOT for downloading invoices from different platforms",
     description: `Engineered an invoice automation system for Pennsylvania Turnpike Commission. Led a team, created Auto-pilot bots to fetch invoices from vendors, boosting efficiency and reducing paperwork through customized asset-vendor bots.`,
     techs: ["Angular", "Bootstrap", "Scss"],
