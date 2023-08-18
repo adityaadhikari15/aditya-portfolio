@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="h-100">
       <Head>
-        <title>Aditya Adhikari</title>
+        <title>Aditya Adhikari - I build things for the web.</title>
         <link rel="shortcut icon" href={metaImage} type="image/x-icon"></link>
         <meta name="image" content="assets/images/og.png" />
         <meta name="description" content={metaDesc} />
@@ -73,6 +73,18 @@ export default function App({ Component, pageProps }: AppProps) {
         <footer className="pb-3">
           <div className="footer-social-links center mb-5">
             <ul className="center">
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=919873978779&amp;text=Hey"
+                  aria-label="Whatapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img src="/assets/images/whatsapp.svg" width={20} />
+                  </div>
+                </a>
+              </li>
               <li>
                 <a
                   href="https://github.com/adityaadhikari15"
@@ -154,6 +166,18 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <div className="fixed-side-bar left">
         <ul>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=919873978779&amp;text=Hey"
+              aria-label="Whatapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src="/assets/images/whatsapp.svg" width={20} />
+              </div>
+            </a>
+          </li>
           <li>
             <a
               href="https://github.com/adityaadhikari15"

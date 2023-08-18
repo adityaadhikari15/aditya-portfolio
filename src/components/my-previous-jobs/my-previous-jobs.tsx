@@ -21,14 +21,14 @@ export const MyPreviousWorks = () => {
                 onClick={() => onTabSelect(0)}
               >
                 SmartDocs&nbsp;
-                <img src="/assets/images/upwork.svg" width={15} />
+                {/* <img src="/assets/images/upwork.svg" width={15} /> */}
               </li>
               <li
                 className={tabIndex === 1 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(1)}
               >
                 Bid Betty&nbsp;
-                <img src="/assets/images/upwork.svg" width={15} />
+                {/* <img src="/assets/images/upwork.svg" width={15} /> */}
               </li>
               <li
                 className={tabIndex === 2 ? ComponentStyles.tab_selected : ""}
@@ -48,8 +48,8 @@ export const MyPreviousWorks = () => {
             {tabIndex === 0 && (
               <div>
                 <h5>
-                  <span>Senior Angular Developer</span>
-                  <span className="company">
+                  <span>Lead Angular Developer(Freelancer)</span>
+                  {/* <span className="company">
                     &nbsp;@&nbsp;
                     <a
                       href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
@@ -59,7 +59,7 @@ export const MyPreviousWorks = () => {
                     >
                       Upwork
                     </a>
-                  </span>
+                  </span> */}
                 </h5>
                 <p className={ComponentStyles.range}>
                   November 2022 - July 2023
@@ -88,8 +88,8 @@ export const MyPreviousWorks = () => {
               <div className="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
                 <div>
                   <h5>
-                    <span>Senior Frontend Developer</span>
-                    <span className="company">
+                    <span>Senior Angular Developer(Freelancer)</span>
+                    {/* <span className="company">
                       &nbsp;@&nbsp;
                       <a
                         href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
@@ -99,7 +99,7 @@ export const MyPreviousWorks = () => {
                       >
                         Upwork
                       </a>
-                    </span>
+                    </span> */}
                   </h5>
                   <p className={ComponentStyles.range}>
                     October 2022 - June 2023

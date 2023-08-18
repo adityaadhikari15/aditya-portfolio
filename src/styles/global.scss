@@ -673,7 +673,8 @@ abbr {
   padding-right: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  &:hover {
+  &:hover,
+  &.button-hovered {
     outline: none;
     box-shadow: 4px 4px 0 0 var(--primary-color);
     transform: translate(-5px, -5px);

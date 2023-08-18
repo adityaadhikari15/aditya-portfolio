@@ -9,6 +9,14 @@
     justify-content: center;
     align-items: center;
     min-height: 70vh;
+    .my_techs {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      img {
+        // width: 50px;
+      }
+    }
   }
   .intro_img {
     max-height: 500px;

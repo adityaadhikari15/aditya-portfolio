@@ -12,7 +12,19 @@ export default function Home() {
   };
 
   const mailTo = () => {
-    window.location.href = "mailto:adityaadhikari15@gmail.com";
+    window.open(
+      "mailto:adityaadhikari15@gmail.com",
+      "_blank",
+      "noopener, noreferrer"
+    );
+  };
+
+  const openWhatapp = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=919873978779&amp;text=Lets chat",
+      "_blank",
+      "noopener, noreferrer"
+    );
   };
 
   const openResume = () => {
@@ -35,11 +47,22 @@ export default function Home() {
               <div>
                 <h3 className="big-heading">I build things for the web.</h3>
               </div>
+              <div className={MainStyles.my_techs}>
+                <div>
+                  <img src="/assets/images/angular.svg" width={60} />
+                </div>
+                <div>
+                  <img src="/assets/images/react.svg" width={70} />
+                </div>
+                <div className="center">
+                  <img src="/assets/images/nextjs-white.svg" width={70} />
+                </div>
+              </div>
               <p>
                 If you have a project that you need to take to the next level or
                 develop a new one from scratch using cutting-edge technologies
                 but still well architecture (modular, easy to extend, and
-                reuse), you are in the right place.{" "}
+                reuse), you are in the right place.
                 <span className="text-primary">Angular is my passion</span> and
                 I love to develop well-structured, extensible, and performant
                 angular applications.
@@ -182,16 +205,48 @@ export default function Home() {
           <h2 className="text-white fw-bold">
             In need of a frontend developer?
           </h2>
-          <div className="fw-semibold text-primary fs-16px">
+
+          <div className="mt-24px">
+            If you have a project that you need to take to the next level or
+            develop a new one from scratch using cutting-edge technologies but
+            still well architecture (modular, easy to extend, and reuse), you
+            are in the right place.Angular is my passion and I love to develop
+            well-structured, extensible, and performant angular applications.
+          </div>
+          <div className="fw-semibold  fs-16px mt-16px">
             <span className="pulse"></span>&nbsp;&nbsp;I’m currently available
             for work.
           </div>
           <div className="mt-32px">
-            <button className="button--primary mr-24px" onClick={mailTo}>
-              <i className="pi pi-envelope mr-8px"></i>Message
-            </button>
-            <button className="button--primary" onClick={openResume}>
-              <i className="pi pi-download mr-8px"></i>Resume
+            <div className="d-flex gap-2">
+              <div>
+                <img src="/assets/images/gmail.svg" width={20} />
+              </div>
+              <div
+                className="mt-1 text-primary cursor-pointer"
+                onClick={mailTo}
+              >
+                adityaadhikari15@gmail.com
+              </div>
+            </div>
+            <div className="d-flex gap-2">
+              <div>
+                <img src="/assets/images/whatsapp.svg" width={20} />
+              </div>
+              <div
+                className="mt-1 text-primary cursor-pointer"
+                onClick={openWhatapp}
+              >
+                +91-9873978779
+              </div>
+            </div>
+          </div>
+          <div className="mt-32px">
+            <button
+              className="button--primary button-hovered"
+              onClick={openResume}
+            >
+              <i className="pi pi-download mr-8px"></i>Download my resume
             </button>
           </div>
         </section>
