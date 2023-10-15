@@ -88,8 +88,8 @@ export default function Home() {
           <h2 className="numbered-heading">
             <span>01.</span>About me
           </h2>
-          <div className="row">
-            <div className="col-md-8">
+          <div className={MainStyles.about_section}>
+            <div className={MainStyles.about_section_desc}>
               <p>
                 👋 Hello! My name is Aditya. I am an accomplished front-end
                 developer with{" "}
@@ -120,14 +120,8 @@ export default function Home() {
                 heights.
               </p>
             </div>
-            <div className="col-md-4 center">
-              <div className={MainStyles.personal_image_wrapper}>
-                {/* <img
-                    className="ml-32px"
-                    src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-                    alt=""
-                  /> */}
-              </div>
+            <div className={MainStyles.personal_image_wrapper + ` center`}>
+              <img className="" src="/assets/images/photo.jpeg" />
             </div>
           </div>
         </section>

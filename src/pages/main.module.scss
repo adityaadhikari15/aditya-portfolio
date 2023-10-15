@@ -1,7 +1,33 @@
 .landing_page {
   // padding-top: 2rem;
+  margin-top: 40px;
   @media screen and (min-width: 768px) {
+    margin-top: 40px;
     // padding-top: 0;
+    .about_section {
+      display: flex;
+      flex-direction: row !important;
+      gap: 32px;
+      .personal_image_wrapper {
+        position: relative;
+        max-width: 300px;
+        // height: 100%;
+        img {
+          object-fit: cover;
+          opacity: 1;
+          bottom: 0;
+          height: auto;
+          left: 0;
+          margin: 0;
+          max-width: none;
+          padding: 0;
+          right: 0;
+          top: 0;
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
   }
   // padding-bottom: 6rem;
   .hero_section {
@@ -24,23 +50,34 @@
   section {
     max-width: 900px;
   }
-  .personal_image_wrapper {
-    position: relative;
-    max-width: 300px;
-    img {
-      object-fit: cover;
-      opacity: 1;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      margin: 0;
-      max-width: none;
-      padding: 0;
-      right: 0;
-      top: 0;
-      width: 100%;
+  .about_section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .about_section_desc {
+      order: 1;
+    }
+    .personal_image_wrapper {
+      order: 0;
+      position: relative;
+      max-width: 300px;
+      img {
+        object-fit: cover;
+        opacity: 1;
+        bottom: 0;
+        height: auto;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        border-radius: 8px;
+      }
     }
   }
+
   .my_clients {
     margin-top: 90px;
     ul {
