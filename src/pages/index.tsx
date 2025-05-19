@@ -29,7 +29,7 @@ export default function Home() {
 
   const openResume = () => {
     window.open(
-      "https://adityaadhikari.in/resume.pdf",
+      "https://adityaadhikari.in/Aditya_Adhikari_Resume_Upwork_Angular.pdf",
       "_blank",
       "noopener, noreferrer"
     );
