@@ -11,6 +11,7 @@ import "primeicons/primeicons.css";
 
 import "@styles/global.scss";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   const metaDesc = `Aditya Adhikari is a frontend engineer, with over 6+ years of experience, 
@@ -33,6 +34,18 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className="h-100">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-K91VK80KTT"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-K91VK80KTT');
+        `}
+      </Script>
       <Head>
         <title>Aditya Adhikari - I build things for the web.</title>
         <link rel="shortcut icon" href={metaImage} type="image/x-icon"></link>
