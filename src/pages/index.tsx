@@ -28,11 +28,7 @@ export default function Home() {
   };
 
   const openResume = () => {
-    window.open(
-      "https://adityaadhikari.in/resume.pdf",
-      "_blank",
-      "noopener, noreferrer"
-    );
+    window.open("/resume.pdf", "_blank", "noopener, noreferrer");
   };
   return (
     <div className="">

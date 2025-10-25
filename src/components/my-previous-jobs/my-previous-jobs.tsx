@@ -20,25 +20,31 @@ export const MyPreviousWorks = () => {
                 className={tabIndex === 0 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(0)}
               >
-                SmartDocs&nbsp;
-                {/* <img src="/assets/images/upwork.svg" width={15} /> */}
+                Mozaic Payments
               </li>
               <li
                 className={tabIndex === 1 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(1)}
               >
-                Bid Betty&nbsp;
+                SmartDocs&nbsp;
                 {/* <img src="/assets/images/upwork.svg" width={15} /> */}
               </li>
               <li
                 className={tabIndex === 2 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(2)}
               >
-                Teebeds Technologies
+                Bid Betty&nbsp;
+                {/* <img src="/assets/images/upwork.svg" width={15} /> */}
               </li>
               <li
                 className={tabIndex === 3 ? ComponentStyles.tab_selected : ""}
                 onClick={() => onTabSelect(3)}
+              >
+                Teebeds Technologies
+              </li>
+              <li
+                className={tabIndex === 4 ? ComponentStyles.tab_selected : ""}
+                onClick={() => onTabSelect(4)}
               >
                 Ideationz
               </li>
@@ -48,21 +54,37 @@ export const MyPreviousWorks = () => {
             {tabIndex === 0 && (
               <div>
                 <h5>
-                  <span>Lead Angular Developer(Freelancer)</span>
-                  {/* <span className="company">
-                    &nbsp;@&nbsp;
-                    <a
-                      href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
-                      className="inline-link"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Upwork
-                    </a>
-                  </span> */}
+                  <span>Senior Angular Developer</span>
+                </h5>
+                <p className={ComponentStyles.range}>April 2024 - May 2025</p>
+                <div className={ComponentStyles.tab_content_job_desc}>
+                  <ul>
+                    <li>
+                      Built a payment platform with Angular 17 and NX,
+                      integrating Tipalti and Stripe for seamless user
+                      onboarding and payments.
+                    </li>
+                    <li>
+                      Developed an intuitive dashboard to manage, receive, and
+                      split earnings.
+                    </li>
+                    <li>
+                      Implemented contract-based revenue sharing so users can
+                      add YouTube videos and automatically divide their ad
+                      revenue.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            {tabIndex === 1 && (
+              <div>
+                <h5>
+                  <span>Lead Angular Developer (Freelancer)</span>
                 </h5>
                 <p className={ComponentStyles.range}>
-                  November 2022 - July 2023
+                  November 2023 - Feburary 2024
                 </p>
                 <div className={ComponentStyles.tab_content_job_desc}>
                   <ul>
@@ -73,7 +95,7 @@ export const MyPreviousWorks = () => {
                     </li>
                     <li>
                       Provide leadership within engineering department through
-                      close collaboration, knowledge shares, and mentorship
+                      close collaboration, knowledge shares, and mentorship.
                     </li>
                     <li>
                       Designed and developed the Admin Panel&apos;s user
@@ -84,61 +106,39 @@ export const MyPreviousWorks = () => {
                 </div>
               </div>
             )}
-            {tabIndex === 1 && (
-              <div className="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
-                <div>
-                  <h5>
-                    <span>Senior Angular Developer(Freelancer)</span>
-                    {/* <span className="company">
-                      &nbsp;@&nbsp;
-                      <a
-                        href="https://www.upwork.com/freelancers/adityaadhikari?s=1110580755057594368"
-                        className="inline-link"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        Upwork
-                      </a>
-                    </span> */}
-                  </h5>
-                  <p className={ComponentStyles.range}>
-                    October 2022 - June 2023
-                  </p>
-                  <div className={ComponentStyles.tab_content_job_desc}>
-                    <ul>
-                      <li>
-                        Autonomously restructuring legacy code into an organized
-                        structure using interceptors, authentication guards, and
-                        router guards for role-based enhancement.
-                      </li>
-                      <li>
-                        Applied Angular best practices to implement features and
-                        suggested solutions for enhanced user experiences.
-                      </li>
-                      <li>
-                        Revamped auction UI and readied the project for
-                        production deployment.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
+
             {tabIndex === 2 && (
               <div>
                 <h5>
+                  <span>Senior Angular Developer (Freelancer)</span>
+                </h5>
+                <p className={ComponentStyles.range}>
+                  October 2022 - June 2023
+                </p>
+                <div className={ComponentStyles.tab_content_job_desc}>
+                  <ul>
+                    <li>
+                      Autonomously restructuring legacy code into an organized
+                      structure using interceptors, authentication guards, and
+                      router guards for role-based enhancement.
+                    </li>
+                    <li>
+                      Applied Angular best practices to implement features and
+                      suggested solutions for enhanced user experiences.
+                    </li>
+                    <li>
+                      Revamped auction UI and readied the project for production
+                      deployment.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            {tabIndex === 3 && (
+              <div>
+                <h5>
                   <span>Frontend Engineer</span>
-                  {/* <span className="company">
-                    &nbsp;@&nbsp;
-                    <a
-                      href="https://starry.com/"
-                      className="inline-link"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Starry
-                    </a>
-                  </span> */}
                 </h5>
                 <p className={ComponentStyles.range}>
                   June 2019 - October 2022
@@ -168,21 +168,11 @@ export const MyPreviousWorks = () => {
                 </div>
               </div>
             )}
-            {tabIndex === 3 && (
+
+            {tabIndex === 4 && (
               <div>
                 <h5>
                   <span>Junior Angular Developer</span>
-                  {/* <span className="company">
-                    &nbsp;@&nbsp;
-                    <a
-                      href="https://web.northeastern.edu/scout/"
-                      className="inline-link"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Scout Studio
-                    </a>
-                  </span> */}
                 </h5>
                 <p className={ComponentStyles.range}>
                   September 2017 - April 2019

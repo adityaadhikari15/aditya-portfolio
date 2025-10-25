@@ -21,11 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const url = `https://adityaadhikari.in/`;
 
   const openResume = () => {
-    window.open(
-      "https://adityaadhikari.in/resume.pdf",
-      "_blank",
-      "noopener, noreferrer"
-    );
+    window.open("/resume.pdf", "_blank", "noopener, noreferrer");
   };
 
   const mailTo = () => {
