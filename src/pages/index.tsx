@@ -219,7 +219,7 @@ export default function Home() {
                 adityaadhikari15@gmail.com
               </div>
             </div>
-            <div className="d-flex gap-2">
+            {/* <div className="d-flex gap-2">
               <div>
                 <img src="/assets/images/whatsapp.svg" width={20} />
               </div>
@@ -230,7 +230,7 @@ export default function Home() {
                 +91-9873978779
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="mt-32px">
             <button
               className="button--primary button-hovered"
